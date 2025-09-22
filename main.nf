@@ -451,9 +451,4 @@ workflow {
 
 }
 
-workflow.onComplete {
-    Pinguscript.ping_complete(nextflow, workflow, params)
-}
-workflow.onError {
-    Pinguscript.ping_error(nextflow, workflow, params)
-}
+
